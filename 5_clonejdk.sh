@@ -11,3 +11,5 @@ if [[ $TARGET_VERSION -eq 21 ]]; then
 else
     git clone --depth 1 https://github.com/openjdk/jdk17u openjdk-17
 fi
+else
+git clone --branch jdk22.0.1 --depth 1 https://github.com/openjdk/jdk22u openjdk-22
