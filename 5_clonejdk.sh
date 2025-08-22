@@ -8,8 +8,8 @@ if [[ $TARGET_VERSION -eq 21 ]]; then
         # TODO: Update Android to JDK 21.0.8+7
         git clone --branch jdk21.0.1 --depth 1 https://github.com/openjdk/jdk21u openjdk-21
     fi
-else
+elif [[ $TARGET_VERSION -eq 17 ]]; then
     git clone --depth 1 https://github.com/openjdk/jdk17u openjdk-17
-fi
 else
-git clone --branch jdk22.0.1 --depth 1 https://github.com/openjdk/jdk22u openjdk-22
+    git clone --branch jdk22.0.1 --depth 1 https://github.com/openjdk/jdk22u openjdk-22
+fi
