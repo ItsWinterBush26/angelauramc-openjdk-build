@@ -10,6 +10,9 @@ if [[ $TARGET_VERSION -eq 21 ]]; then
     fi
 elif [[ $TARGET_VERSION -eq 17 ]]; then
     git clone --depth 1 https://github.com/openjdk/jdk17u openjdk-17
-else
-    git clone --branch jdk22.0.1 --depth 1 https://github.com/openjdk/jdk22u openjdk-22
+elif [[ $TARGET_VERSION -eq 25 ]]; then
+    git clone --depth1 https://github.com/openjdk/jdk25u openjdk-25
+else [[ $TARGET_VERSION -eq 22 ]]; then
+    git clone --depth 1 https://github.com/openjdk/jdk22u openjdk-22
 fi
+
